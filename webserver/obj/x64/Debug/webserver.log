@@ -1,0 +1,8 @@
+﻿  Validating sources
+  Copying sources remotely to '47.103.6.26'
+  Validating architecture
+  Starting remote build
+  Compiling sources:
+  Util.cpp
+  Linking objects
+  webserver.vcxproj -> D:\VS2017Source\webserver\webserver\bin\x64\Debug\webserver.out

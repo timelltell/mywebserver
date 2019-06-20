@@ -1,0 +1,84 @@
+﻿  Validating sources
+  Copying sources remotely to '47.103.6.26'
+  Validating architecture
+  Starting remote build
+  Compiling sources:
+  AsyncLogging.cpp
+  CountDownLatch.cpp
+  FileUtil.cpp
+  LogFile.cpp
+  Logging.cpp
+  LogStream.cpp
+  Thread.cpp
+  Channel.cpp
+  Epoll.cpp
+  EventLoop.cpp
+  EventLoopThread.cpp
+  EventLoopThreadPool.cpp
+  HttpData.cpp
+D:\VS2017Source\webserver\webserver\HttpData.cpp(177,50): warning : conversion to ‘int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+D:\VS2017Source\webserver\webserver\HttpData.cpp(177,50): warning :          int read_num = readn(fd_, inBuffer_, zero);
+D:\VS2017Source\webserver\webserver\HttpData.cpp(177,50): warning :                                                   ^
+D:\VS2017Source\webserver\webserver\HttpData.cpp(398,41): warning : conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+D:\VS2017Source\webserver\webserver\HttpData.cpp(398,41): warning :      int posGet = request_line.find("GET");
+D:\VS2017Source\webserver\webserver\HttpData.cpp(398,41): warning :                                          ^
+D:\VS2017Source\webserver\webserver\HttpData.cpp(399,43): warning : conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+D:\VS2017Source\webserver\webserver\HttpData.cpp(399,43): warning :      int posPost = request_line.find("POST");
+D:\VS2017Source\webserver\webserver\HttpData.cpp(399,43): warning :                                            ^
+D:\VS2017Source\webserver\webserver\HttpData.cpp(400,43): warning : conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+D:\VS2017Source\webserver\webserver\HttpData.cpp(400,43): warning :      int posHead = request_line.find("HEAD");
+D:\VS2017Source\webserver\webserver\HttpData.cpp(400,43): warning :                                            ^
+D:\VS2017Source\webserver\webserver\HttpData.cpp(491,27): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+D:\VS2017Source\webserver\webserver\HttpData.cpp(491,27): warning :                  key_start = i;
+D:\VS2017Source\webserver\webserver\HttpData.cpp(491,27): warning :                            ^
+D:\VS2017Source\webserver\webserver\HttpData.cpp(492,37): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+D:\VS2017Source\webserver\webserver\HttpData.cpp(492,37): warning :                  now_read_line_begin = i;
+D:\VS2017Source\webserver\webserver\HttpData.cpp(492,37): warning :                                      ^
+D:\VS2017Source\webserver\webserver\HttpData.cpp(499,29): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+D:\VS2017Source\webserver\webserver\HttpData.cpp(499,29): warning :                      key_end = i;
+D:\VS2017Source\webserver\webserver\HttpData.cpp(499,29): warning :                              ^
+D:\VS2017Source\webserver\webserver\HttpData.cpp(521,29): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+D:\VS2017Source\webserver\webserver\HttpData.cpp(521,29): warning :                  value_start = i;
+D:\VS2017Source\webserver\webserver\HttpData.cpp(521,29): warning :                              ^
+D:\VS2017Source\webserver\webserver\HttpData.cpp(529,31): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+D:\VS2017Source\webserver\webserver\HttpData.cpp(529,31): warning :                      value_end = i;
+D:\VS2017Source\webserver\webserver\HttpData.cpp(529,31): warning :                                ^
+D:\VS2017Source\webserver\webserver\HttpData.cpp(545,41): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+D:\VS2017Source\webserver\webserver\HttpData.cpp(545,41): warning :                      now_read_line_begin = i;
+D:\VS2017Source\webserver\webserver\HttpData.cpp(545,41): warning :                                          ^
+D:\VS2017Source\webserver\webserver\HttpData.cpp(559,31): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+D:\VS2017Source\webserver\webserver\HttpData.cpp(559,31): warning :                      key_start = i;
+D:\VS2017Source\webserver\webserver\HttpData.cpp(559,31): warning :                                ^
+D:\VS2017Source\webserver\webserver\HttpData.cpp(577,27): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+D:\VS2017Source\webserver\webserver\HttpData.cpp(577,27): warning :                  key_start = i;
+D:\VS2017Source\webserver\webserver\HttpData.cpp(577,27): warning :                            ^
+D:\VS2017Source\webserver\webserver\HttpData.cpp(578,37): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+D:\VS2017Source\webserver\webserver\HttpData.cpp(578,37): warning :                  now_read_line_begin = i;
+D:\VS2017Source\webserver\webserver\HttpData.cpp(578,37): warning :                                      ^
+D:\VS2017Source\webserver\webserver\HttpData.cpp(627,41): warning : conversion to ‘int’ from ‘std::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+D:\VS2017Source\webserver\webserver\HttpData.cpp(627,41): warning :          int dot_pos = fileName_.find('.');
+D:\VS2017Source\webserver\webserver\HttpData.cpp(627,41): warning :                                          ^
+  main.cpp
+  Timer.cpp
+  Util.cpp
+  Linking objects
+D:\VS2017Source\webserver\webserver\obj\x64\Release\EventLoop.o : error : In function `EventLoop::loop()':
+EventLoop.cpp : error : (.text+0x6b0): undefined reference to `Epoll::poll()'
+EventLoop.cpp : error : (.text+0x875): undefined reference to `Epoll::handleExpired()'
+D:\VS2017Source\webserver\webserver\obj\x64\Release\Logging.o : error : In function `output(char const*, int)':
+Logging.cpp : error : (.text+0xf6): undefined reference to `pthread_once'
+D:\VS2017Source\webserver\webserver\obj\x64\Release\Logging.o : error : In function `Logger::~Logger()':
+Logging.cpp : error : (.text+0x4ea): undefined reference to `pthread_once'
+D:\VS2017Source\webserver\webserver\obj\x64\Release\Thread.o : error : In function `Thread::~Thread()':
+Thread.cpp : error : (.text+0x325): undefined reference to `pthread_detach'
+D:\VS2017Source\webserver\webserver\obj\x64\Release\Thread.o : error : In function `Thread::start()':
+Thread.cpp : error : (.text+0x41d): undefined reference to `pthread_create'
+D:\VS2017Source\webserver\webserver\obj\x64\Release\Thread.o : error : In function `Thread::join()':
+Thread.cpp : error : (.text+0x50b): undefined reference to `pthread_join'
+D:\VS2017Source\webserver\webserver\obj\x64\Release\Epoll.o : error : In function `Epoll::epoll_mod(std::shared_ptr<Channel>, int)':
+Epoll.cpp : error : (.text+0x3db): undefined reference to `Epoll::add_timer(std::shared_ptr<Channel>, int)'
+D:\VS2017Source\webserver\webserver\obj\x64\Release\Epoll.o : error : In function `Epoll::epoll_add(std::shared_ptr<Channel>, int)':
+Epoll.cpp : error : (.text+0x5d0): undefined reference to `Epoll::add_timer(std::shared_ptr<Channel>, int)'
+D:\VS2017Source\webserver\webserver\obj\x64\Release\HttpData.o : error : In function `MimeType::getMime(std::string const&)':
+HttpData.cpp : error : (.text+0x2ccf): undefined reference to `pthread_once'
+collect2 : error : ld returned 1 exit status
